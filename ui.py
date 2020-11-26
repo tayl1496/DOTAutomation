@@ -13,7 +13,6 @@ from util import scrape, list_to_excel
 
 
 class Ui_DotAutomation(object):
-
     def __init__(self, DotAutomation):
         self.centralwidget = QtWidgets.QWidget(DotAutomation)
         self.gridLayoutWidget_2 = QtWidgets.QWidget(self.centralwidget)
@@ -96,18 +95,36 @@ class Ui_DotAutomation(object):
         _translate = QtCore.QCoreApplication.translate
         DotAutomation.setWindowTitle(_translate("DotAutomation", "MainWindow"))
         self.step4.setText(_translate("DotAutomation", "Step 4: Hit Run"))
-        self.label.setText(_translate("DotAutomation", "Step 3 Note: Separate numbers by a space"))
-        self.step2.setText(_translate("DotAutomation", "Step 2: Enter URL into the box below"))
+        self.label.setText(
+            _translate("DotAutomation", "Step 3 Note: Separate numbers by a space")
+        )
+        self.step2.setText(
+            _translate("DotAutomation", "Step 2: Enter URL into the box below")
+        )
         self.run_btn.setText(_translate("DotAutomation", "Run"))
-        self.step3.setText(_translate("DotAutomation", "Step 3: Enter part numbers in text box on right"))
-        self.step1.setToolTip(_translate("DotAutomation", "It is not item inquiry because that does not have updated "
-                                                          "item status"))
-        self.step1.setText(_translate("DotAutomation", "Step 1: Navigate to Inventory Inquiry (I/C Inquiry)"))
+        self.step3.setText(
+            _translate(
+                "DotAutomation", "Step 3: Enter part numbers in text box on right"
+            )
+        )
+        self.step1.setToolTip(
+            _translate(
+                "DotAutomation",
+                "It is not item inquiry because that does not have updated "
+                "item status",
+            )
+        )
+        self.step1.setText(
+            _translate(
+                "DotAutomation", "Step 1: Navigate to Inventory Inquiry (I/C Inquiry)"
+            )
+        )
         self.label_2.setText(_translate("DotAutomation", "Ex) XBU11Z 2804-20 2853-20"))
 
 
 if __name__ == "__main__":
     import sys
+
     app = QtWidgets.QApplication(sys.argv)
     app.setStyle("Fusion")
     MainWindow = QtWidgets.QMainWindow()
